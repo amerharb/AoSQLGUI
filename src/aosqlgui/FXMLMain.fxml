@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="555.0" prefWidth="706.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="aosqlgui.FXMLMainController">
+    <children>
+        <Button fx:id="btnSend" layoutX="571.0" layoutY="31.0" onAction="#handleBtnSendAction" prefHeight="31.0" prefWidth="108.0" text="Send" />
+      <TextArea fx:id="txtCommand" layoutX="51.0" layoutY="31.0" prefHeight="133.0" prefWidth="505.0" />
+      <TextArea fx:id="txtResult" layoutX="51.0" layoutY="194.0" prefHeight="335.0" prefWidth="505.0" />
+    </children>
+</AnchorPane>
