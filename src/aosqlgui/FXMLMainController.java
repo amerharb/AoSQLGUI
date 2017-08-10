@@ -12,25 +12,35 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import aosqldriver.AoSQLConnector;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
  * @author amharb
  */
 public class FXMLMainController implements Initializable {
-    
+
     @FXML
     private TextArea txtCommand, txtResult;
 
+    AoSQLConnector conn = new AoSQLConnector();
+
+    @FXML
+    private void handleBtnConnectAction(ActionEvent event) {
+        conn.connect();
+    }
+
     @FXML
     private void handleBtnSendAction(ActionEvent event) {
-        txtCommand.setText("Hello Command!");
-        txtResult.setText("Hello Results!");
+        txtCommand.setText(conn.test());
+        txtResult.setText(conn.test());
     }
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    
+
+    }
+
 }

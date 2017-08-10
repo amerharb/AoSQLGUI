@@ -6,10 +6,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="555.0" prefWidth="706.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="aosqlgui.FXMLMainController">
+<AnchorPane id="AnchorPane" prefHeight="555.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aosqlgui.FXMLMainController">
     <children>
-        <Button fx:id="btnSend" layoutX="571.0" layoutY="31.0" onAction="#handleBtnSendAction" prefHeight="31.0" prefWidth="108.0" text="Send" />
+        <Button fx:id="btnSend" layoutX="572.0" layoutY="67.0" onAction="#handleBtnSendAction" prefHeight="31.0" prefWidth="108.0" text="Send" />
       <TextArea fx:id="txtCommand" layoutX="51.0" layoutY="31.0" prefHeight="133.0" prefWidth="505.0" />
       <TextArea fx:id="txtResult" layoutX="51.0" layoutY="194.0" prefHeight="335.0" prefWidth="505.0" />
+      <Button fx:id="btnConnect" layoutX="572.0" layoutY="31.0" onAction="#handleBtnConnectAction" prefHeight="31.0" prefWidth="108.0" text="Connect" />
     </children>
 </AnchorPane>
